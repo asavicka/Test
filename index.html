@@ -58,11 +58,17 @@
       <img src="images/birds3.jpg" class="img-responsive" style="width:100%" alt="Image">
     </div>
   </div>
-</div>
-    <footer class="container-fluid bg-4 text-center">
-  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p>
-</footer>
-     <script>
+</div>        window.onscroll = function() {myFunction()};
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+             <script>
         window.onscroll = function() {myFunction()};
         var navbar = document.getElementById("navbar");
         var sticky = navbar.offsetTop;
@@ -74,5 +80,9 @@
             }
         }
         </script>
+    <footer class="container-fluid bg-4 text-center">
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p>
+</footer>
+
 </body>
 </html>
